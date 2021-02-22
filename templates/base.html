@@ -23,6 +23,8 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="{% static 'theme/css/argon.css' %}" type="text/css">
+
+  {% block extra_head %} {% endblock %}
 </head>
 
 <body>
@@ -75,6 +77,8 @@
   <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
   <script src="{% static 'theme/js/argon.js' %}"></script>
+
+  {% block extra_body %} {% endblock %}
 </body>
 
 </html>
